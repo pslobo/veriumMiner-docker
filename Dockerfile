@@ -14,5 +14,4 @@ RUN set -x \
     && apt-get -y --auto-remove purge $BUILD_DEPS \
     && rm -fr /var/lib/apt-/lists/*
 
-WORKDIR     /veriumMiner
-ENTRYPOINT  ["./cpuminer"]
+ENTRYPOINT  ["/veriumMiner/cpuminer"]
